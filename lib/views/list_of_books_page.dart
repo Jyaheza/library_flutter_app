@@ -5,13 +5,13 @@ import '../controllers/library_controller.dart';
 class ListOfBooksPage extends StatelessWidget {
   final LibraryController controller;
 
-  ListOfBooksPage({required this.controller});
+  const ListOfBooksPage({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List of Books'),
+        title: const Text('List of Books'),
       ),
       body: ListView.builder(
         itemCount: controller.getAllBooks().length,

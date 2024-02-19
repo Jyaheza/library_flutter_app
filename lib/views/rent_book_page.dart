@@ -7,7 +7,7 @@ class RentBookPage extends StatelessWidget {
   final BookController bookController;
   final LibraryController libraryController;
 
-  RentBookPage({required this.bookController, required this.libraryController});
+  const RentBookPage({super.key, required this.bookController, required this.libraryController});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class RentBookPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rent Book'),
+        title: const Text('Rent Book'),
       ),
       body: ListView.builder(
         itemCount: books.length,
@@ -38,7 +38,7 @@ class RentBookPage extends StatelessWidget {
                         );
                       }
                     },
-                    child: Text('Rent'),
+                    child: const Text('Rent'),
                   ),
           );
         },
