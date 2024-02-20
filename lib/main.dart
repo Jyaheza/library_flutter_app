@@ -4,8 +4,14 @@ import 'package:library_flutter_app/controllers/library_controller.dart';
 import 'package:library_flutter_app/models/library_model.dart';
 import 'views/home_page.dart';
 import 'package:dcdg/dcdg.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 

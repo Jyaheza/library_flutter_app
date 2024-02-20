@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831862827644",
+    "project_id": "library-app-6688b",
+    "storage_bucket": "library-app-6688b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831862827644:android:17d0466c50bc52bf2677f9",
+        "android_client_info": {
+          "package_name": "com.mauricejyaheza.library_flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4NL1D4295M8ZrAvWs-acAAv35mEJLNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
